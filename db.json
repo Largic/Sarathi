@@ -1,0 +1,148 @@
+{
+  "seller": [
+    {
+      "name": "darwin",
+      "password": "adminer",
+      "email": "admin@gmail.com",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "karaikudi meal",
+      "price": "200",
+      "category": "meal",
+      "color": "oormila",
+      "desc": "A best meal",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 4
+    },
+    {
+      "name": "karraikaal meal",
+      "price": "200",
+      "category": "fullmeal",
+      "color": "oormila",
+      "desc": "A best meal",
+      "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 5
+    },
+    {
+      "name": "bread sandwich",
+      "price": "150",
+      "category": "bread",
+      "color": "oormila",
+      "desc": "A best bfast",
+      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 6
+    },
+    {
+      "name": "pizza",
+      "price": "300",
+      "category": "a full food",
+      "color": "spicy&crispy",
+      "desc": "a good pizza at affordable cost",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 7
+    },
+    {
+      "name": "capachiuno",
+      "price": "50",
+      "category": "refresher",
+      "color": "coffeshop",
+      "desc": "a best refresher",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 8
+    },
+    {
+      "name": "Black tea",
+      "price": "200",
+      "category": "tea",
+      "color": "soori",
+      "desc": "a good tea ",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 9
+    },
+    {
+      "name": "Black biscut",
+      "price": "200",
+      "category": "biscuts",
+      "color": "soori",
+      "desc": "a good biscut to eat",
+      "image": "https://plus.unsplash.com/premium_photo-1670603797316-84effb6f623f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZCUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 10
+    },
+    {
+      "name": "double burger",
+      "price": "200",
+      "category": "bun",
+      "color": "oormila",
+      "desc": "a good meal ",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "name": "user001",
+      "email": "user@gmail.com",
+      "password": "adminis",
+      "id": 1
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "karaikudi meal",
+      "price": "200",
+      "category": "meal",
+      "color": "oormila",
+      "desc": "A best meal",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "quantity": 1,
+      "productid": 4,
+      "userid": 1,
+      "id": 1
+    },
+    {
+      "name": "pizza",
+      "price": "300",
+      "category": "a full food",
+      "color": "spicy&crispy",
+      "desc": "a good pizza at affordable cost",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "quantity": 1,
+      "productid": 7,
+      "userid": 2,
+      "id": 2
+    },
+    {
+      "name": "bread sandwich",
+      "price": "150",
+      "category": "bread",
+      "color": "oormila",
+      "desc": "A best bfast",
+      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "quantity": 3,
+      "productid": 6,
+      "userid": 2,
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "email": "",
+      "address": "",
+      "mobileno": "",
+      "upiid": "2222",
+      "upipin": "22222",
+      "totalprice": 850,
+      "userid": 2,
+      "id": 1
+    }
+  ]
+}

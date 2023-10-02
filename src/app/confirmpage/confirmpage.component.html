@@ -1,0 +1,17 @@
+<div class="my-orders">
+    <h1>MY ORDERS</h1>
+    <div class="row">
+        <div class="col-sm-2"><span>ORDER</span></div>
+        <div class="col-sm-2"><span>ORDERID</span></div>
+        <div class="col-sm-2"><span>PRICE</span></div>
+        <div class="col-sm-2"><span>STATUS</span></div>
+        <div class="col-sm-2"><span>DELIVERY</span></div>
+    </div>
+    <div class="row order-data" *ngFor="let order of orderdata">
+        <div class="col-sm-2 "><img class="order-img" src="https://images.unsplash.com/photo-1581067721837-e4809b29692d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNob3BwaW5nJTIwY2FydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+        <div class="col-sm-2"><span>{{order.id}}</span></div>
+        <div class="col-sm-2"><span>{{order.totalprice}}</span></div>
+        <div class="col-sm-2"><span>Ordered </span></div>
+        <div class="col-sm-2"><span>Within 4 Days</span></div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+table{
+    text-align: left;
+    color: rgb(16, 58, 225);
+     border-collapse: collapse;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+table td , table th {
+    border: 1px solid aqua;
+    padding: 10px;
+    min-width: 160pxs;
+}
+.update-button-spacer{
+    margin-left: 10px;
+}

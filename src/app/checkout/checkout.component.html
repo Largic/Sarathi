@@ -1,0 +1,44 @@
+<div class="checkout">
+    <h1>
+        CHECK OUT
+    </h1>
+    <div class="row">
+        <div class ="col-sm-7">
+            <h3>Add Shipping Address</h3>
+            <form #orderdata = "ngForm" class =" common-form" (ngSubmit)="ordernow(orderdata.value)">
+            <input type="email" class="form-input" name = "email" placeholder="enter email id" ngModel />
+            <input type="text" class="form-input" name = "address" placeholder="enter address" ngModel />
+            <input type="number" class="form-input" name = "mobileno" placeholder="enter mobileno" ngModel/>
+            <input type="text" 
+            class="form-input"
+             name = "upiid" 
+             placeholder="enter upi id"
+              ngModel
+             minlength="4"
+             #upiid ="ngModel"
+              required/>
+              <p class = "invalid-input">
+                <span *ngIf="upiid.invalid && upiid.touched">
+                    Enter pin length min 4 digit</span>
+                </p>
+            <input type="text" 
+            class="form-input"
+             name = "upipin" 
+             placeholder="enter upi pin"
+              ngModel
+              #upipin ="ngModel"
+              minlength="4"
+            required/>
+            <p class = "invalid-input">
+                <span *ngIf="upipin.invalid && upipin.touched">
+                Enter pin length min 4 digit</span>
+                </p>
+            <button [disabled]="orderdata.invalid" class = "form-button">ORDER NOW</button>
+            </form>
+        </div>
+        <div class = "col-sm-5">
+            <h3>TotalAmount:{{totalprice}}</h3>
+            <h4>Payment Method: <b>pay with upi</b></h4>
+        </div>
+    </div>
+</div>

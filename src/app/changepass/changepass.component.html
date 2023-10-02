@@ -1,0 +1,22 @@
+<h1>CHANGE PASSWORD HERE</h1>
+<div class="input-field">
+    <form #adminchange="ngForm" (ngSubmit)="changepass(password.value)" class="common-form">
+        
+        <input type="password" 
+        class="form-input" 
+        placeholder="Enter password" 
+        name="password" 
+        ngModel 
+        minlength="4"
+        maxlength="14"
+        #password = "ngModel" 
+        required
+        />
+        <p class = "invalid-input">
+            <span *ngIf="password.invalid && password.touched">
+            please enter valid password</span>
+            </p>
+        <button [disabled]="adminchange.invalid" class="form-button">CHANGE PASSWORD</button>
+        
+    </form>
+</div>

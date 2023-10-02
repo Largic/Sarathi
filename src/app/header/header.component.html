@@ -1,0 +1,35 @@
+<nav class="nav">
+    <h1><a routerLink="">Shoppy</a> </h1>
+    <div *ngIf="menutype=='default'||'user'" class="nav-search">
+        <input type="text" #searchinput (keyup)="searchproduct($event)" (blur)="hidesearch()"
+            placeholder="search products" />
+        <button (click)="submitsearch(searchinput.value)">Search</button>
+        <ul class="suggested-search" *ngIf="searchresult">
+            <li *ngFor="let item of searchresult">
+                <a (mousedown)="redirectTo(item.id)">{{item.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <div [ngSwitch]="menutype">
+        <ul *ngSwitchCase="'default'">
+            <li><a routerLink="/seller-auth">Admin</a></li>
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="user-auth">Login/SignUp</a></li>
+            <li><a routerLink="cart-page">Cart({{cartitems}})</a></li>
+        </ul>
+        <ul *ngSwitchCase="'seller'">
+            <li><a routerLink="seller-add-product">Add Product</a></li>
+            <li><a routerLink="seller-home">List</a></li>
+            <li><a routerLink="changeit">Change Password</a></li>
+            <li><a (click)="logout()">Log out</a></li>
+            <li><a href="">{{sellername | titlecase}}</a></li>
+        </ul>
+        <ul *ngSwitchCase="'user'">
+            <li><a routerLink="/seller-auth">Admin</a></li>
+            <li><a routerLink="">Home</a></li>
+            <li><a>{{username | titlecase}}</a></li>
+            <li><a (click)="userlogout()">logout</a></li>
+            <li><a routerLink="cart-page">Cart({{cartitems}})</a></li>
+        </ul>
+    </div>
+</nav>
